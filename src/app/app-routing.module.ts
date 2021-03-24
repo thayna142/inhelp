@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'pesquisar-profissionais',
+    loadChildren: () => import('./pesquisar-profissionais/pesquisar-profissionais.module').then( m => m.PesquisarProfissionaisPageModule)
   }
+
 ];
 
 @NgModule({
