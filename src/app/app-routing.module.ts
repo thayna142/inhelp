@@ -25,6 +25,14 @@ const routes: Routes = [
   },  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'cadastrar-usuarios',
+    loadChildren: () => import('./cadastrar-usuarios/cadastrar-usuarios.module').then( m => m.CadastrarUsuariosPageModule)
+  },
+  {
+    path: 'contratacoes-anteriores',
+    loadChildren: () => import('./contratacoes-anteriores/contratacoes-anteriores.module').then( m => m.ContratacoesAnterioresPageModule)
   }
 
 
