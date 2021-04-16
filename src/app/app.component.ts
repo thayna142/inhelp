@@ -10,7 +10,9 @@ export class AppComponent {
     { title: 'Contratações', url: '/contratacoes-anteriores', icon: 'person' },
     { title: 'Perfil', url: '/perfil', icon: 'person' }, 
     { title: 'Login', url: '/login', icon: 'arrow-back-circle' },
-    { title: 'Agenda', url: 'agenda', icon: 'navigate' },
+    { title: 'Agenda', url: '/agenda', icon: 'navigate' },
+    { title: 'Pagamento', url: '/pagamento', icon: 'bag-check' },
+    { title: 'Chat', url: '/chat', icon: 'chatbubble' },
     
     
   ];
