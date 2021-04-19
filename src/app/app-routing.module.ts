@@ -45,6 +45,14 @@ const routes: Routes = [
   {
     path: 'chat',
     loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'cadastro-profissional',
+    loadChildren: () => import('./cadastro-profissional/cadastro-profissional.module').then( m => m.CadastroProfissionalPageModule)
+  },
+  {
+    path: 'feedback',
+    loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
   }
 
 

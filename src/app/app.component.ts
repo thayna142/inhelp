@@ -9,10 +9,15 @@ export class AppComponent {
     { title: 'Buscar', url: '/pesquisar-profissionais', icon: 'navigate' },
     { title: 'Contratações', url: '/contratacoes-anteriores', icon: 'person' },
     { title: 'Perfil', url: '/perfil', icon: 'person' }, 
+    { title: 'Cadastro', url: '/cadastro-profissional', icon: 'person' }, 
+    { title: 'Chat', url: '/chat', icon: 'chatbubble' },
     { title: 'Login', url: '/login', icon: 'arrow-back-circle' },
     { title: 'Agenda', url: '/agenda', icon: 'navigate' },
     { title: 'Pagamento', url: '/pagamento', icon: 'bag-check' },
-    { title: 'Chat', url: '/chat', icon: 'chatbubble' },
+    { title: 'Feedback', url: '/feedback', icon: 'chatbubble' },
+   
+    
+    
     
     
   ];

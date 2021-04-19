@@ -1,28 +1,86 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
+    <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Pagamento</ion-title>
+  </ion-toolbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-list>
-    <ion-list-header>
 
-      
+  <ion-card-header>
+    
+    <center><h1>Escolha a Forma de Pagamento:</h1></center>
+  </ion-card-header>
+
+
+
+
+<ion-card>
+  <ion-card-content>
+    
+    <ion-checkbox color="primary"></ion-checkbox>
+    Débito
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    
+    <ion-checkbox color="primary"></ion-checkbox>
+    Dinheiro
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
   
-    </ion-list-header>
-  
+  <ion-item>
    
-  
+  <ion-icon name="card-outline"></ion-icon>
+    <ion-label>Pagamento em Débito</ion-label>
+  </ion-item>
+
+
+  <ion-list>
+
     <ion-item>
-      <ion-label>Modo de pagamento</ion-label>
-      <ion-select value="brown" okText="Okay" cancelText="Cancelar">
-        <ion-select-option value="dinheiro">Dinheiro</ion-select-option>
-        <ion-select-option value="cartão">Cartão</ion-select-option>
-      </ion-select>
+      <ion-label position="floating"></ion-label>
+        Número do Cartão
+        <ion-input></ion-input>
+      <ion-reorder slot="end"></ion-reorder>
     </ion-item>
-  
+
+    <ion-item>
+      <ion-label position="floating"></ion-label>
+        Data de Vencimento do Cartão:
+        <input id="date" type="date" value="2025-02-10">
+        <ion-input></ion-input>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+
+    <ion-item>
+    
+   
+    </ion-item>
   </ion-list>
+  
+
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    
+    <ion-checkbox color="primary"></ion-checkbox>
+    Eu li e concordo com os Termos e Condições.
+  </ion-card-content>
+</ion-card>
+
+<ion-button expand="full">Finalizar Pagamento</ion-button>
+
 
 </ion-content>
+

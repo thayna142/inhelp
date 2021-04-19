@@ -1,73 +1,158 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Pesquisar Profissionais</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
-  <ion-searchbar></ion-searchbar>
 
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="data:image/jpeg;base64,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">
-    </ion-avatar>
-    <ion-label>
-      <h3>Matheus Souza</h3>
-      <p>Vidraceiro</p>
-      <ion-icon name="location-outline"></ion-icon>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="https://image.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg">
-    </ion-avatar>
-    
-    
-    <ion-label>
-      
-      <h3>Raul Arsenal</h3>
-      <p>Vidraceiro</p>
-      <ion-icon name="location-outline"></ion-icon>
-      
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="https://pbs.twimg.com/media/D2e6S91WwAA-SiN.png">
-    </ion-avatar>
-    <ion-label>
-      <h3>Gabriel Fonseca</h3>
-      <p>Vidraceiro</p>
-      <ion-icon name="location-outline"></ion-icon>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="https://i.pinimg.com/736x/2e/6c/d2/2e6cd25b1771b7db881a9db78a063f3f.jpg">
-    </ion-avatar>
-    <ion-label>
-      <h3>Daniel Fonte</h3>
-      <p>Vidraceiro</p>
-      <ion-icon name="location-outline"></ion-icon>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="https://wl-incrivel.cf.tsp.li/resize/728x/jpg/19b/5d0/f9f4365785b13bcf2ca73e0a4e.jpg">
-    </ion-avatar>
-    <ion-label>
-      <h3>Alex de Melo</h3>
-      <p>Vidraceiro</p>
-      <ion-icon name="location-outline"></ion-icon>
-    </ion-label>
-  </ion-item>
-
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Pesquisar Profissionais</ion-title>
+    </ion-toolbar>
+  </ion-header>
   
-
-
+  <ion-content>
+    <ion-searchbar></ion-searchbar>
+    <ion-card>
+      <ion-card-content>
+        <ion-list lines="full">
   
+          <ion-item>
+            <ion-avatar slot="end" class="end-avatar">
+              <ion-icon name="location" class="icon-local"></ion-icon>
+              8KM
+            </ion-avatar>
+  
+            <ion-avatar slot="start">
+              <img
+                src="https://cdn-engage.s3.amazonaws.com/2019/02/14/18/18/45/f94e1577-2c1b-4afd-8101-a6e15295253c/29595526_1722049621195746_2046606512573510321_n-jpg">
+            </ion-avatar>
+  
+            <ion-label>
+              <h2>Matheus Castro</h2>
+              <h3>Vidraceiro </h3>
+              <p>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+              </p>
+  
+            </ion-label>
+          </ion-item>
+  
+          <ion-item>
+            <ion-avatar slot="end" class="end-avatar">
+              <ion-icon name="location" class="icon-local"></ion-icon>
+              4KM
+            </ion-avatar>
+  
+            <ion-avatar slot="start">
+              <img
+                src="https://desbraveomundo.com/wp-content/uploads/2017/02/10cidades-homens-bonitos-lindos-mundo-desbraveomundo.jpg">
+            </ion-avatar>
+  
+            <ion-label>
+              <h2>Gabriel Cardoso</h2>
+              <h3>Vidraceiro</h3>
+              <p>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+              </p>
+  
+            </ion-label>
+          </ion-item>
+  
+          <ion-item>
+            <ion-avatar slot="end" class="end-avatar">
+              <ion-icon name="location" class="icon-local"></ion-icon>
+              8KM
+            </ion-avatar>
+  
+            <ion-avatar slot="start">
+              <img
+                src="https://i.pinimg.com/originals/9a/93/ed/9a93edc73bd74385f5dc87c27d1e9a2e.jpg">
+            </ion-avatar>
+  
+            <ion-label>
+              <h2>Marcio Gomes</h2>
+              <h3>Vidraceiro</h3>
+              <p>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+              </p>
+  
+            </ion-label>
+          </ion-item>
+  
+          <ion-item>
+            <ion-avatar slot="end" class="end-avatar">
+              <ion-icon name="location" class="icon-local"></ion-icon>
+              9KM
+            </ion-avatar>
+  
+            <ion-avatar slot="start">
+              <img
+                src="https://s2.glbimg.com/41_qb2IxGRkwpDsIYZTzr3ReJPg=/e.glbimg.com/og/ed/f/original/2018/05/23/idriselba2.jpg">
+            </ion-avatar>
+  
+            <ion-label>
+              <h2>Marcos Geraldo</h2>
+              <h3>Vidraceiro</h3>
+              <p>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+              </p>
+  
+            </ion-label>
+          </ion-item>
+  
+          <ion-item>
+            <ion-avatar slot="end" class="end-avatar">
+              <ion-icon name="location" class="icon-local"></ion-icon>
+              10KM
+            </ion-avatar>
+  
+            <ion-avatar slot="start">
+              <img
+                src="https://blog.beard.com.br/wp-content/uploads/2017/12/Os-melhores-presentes-para-homens-de-40-anos-ou-mais.jpg">
+            </ion-avatar>
+  
+            <ion-label>
+              <h2>Henzo Lopes</h2>
+              <h3>Vidraceiro</h3>
+              <p>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+                <ion-icon name="star-outline" class="icon-star"></ion-icon>
+              </p>
+            </ion-label>
+          </ion-item>
+          
+        </ion-list>
+        
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+
+
+
+
+
+
+
+
 </ion-content>
